@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <head>
+        <title>My first Web page part 2 </title>
+        <style>
+            body{
+                font-family: Arial-narrow, Helvetica, sans-serif, sans-serif;
+                background-color: #FFFACD;
+                padding: 20px;
+            }
+            .Heading {
+                letter-spacing: 12px;
+                background: #8B0000;
+                text-align: center;
+                color: #FFFFFF;
+                font-family: Arial-narrow, Helvetica, sans-serif, sans-serif;
+                display: block;
+                padding: 5px;
+                margin-bottom: 0px;
+            }
+            .red {
+                
+                background: #c71226;
+                height: 20px;
+                margin-bottom: 10px;
+                
+            }
+            .subhead{
+                margin-top: 5px;
+                background-color: #228B22;
+                color: #FFFFFF;
+                display: block;
+                padding-left: 15px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            .cell{
+                background-color:  #d5d1d1;
+            }
+            .random {
+                color: #9b9494;
+            }
+            .listed{
+                color: #c71226;
+                
+            }
+            .link{
+                display: block;
+                margin-bottom: 25px;
+            }
+            .google{
+                
+                border: dashed #9b9494;
+            }
+        </style>
+        <script type="text/javascript">
+            function validateForm() {    
+            var name = document.my_form.yname;    
+            var comm = document.my_form.comm;    
+            var gender = document.my_form.gender;    
+            valid = true;  
+    
+            if (document.my_form.yname.value == "") {    
+                alert("All fields are compulsary");    
+                yname.focus();    
+                return false;    
+            }    
+            if (document.my_form.comm.value == "") {    
+                alert("All fields are compulsary");    
+                comm.focus();    
+                return false;    
+            }    
+            if (document.my_form.gender.value == "") {    
+                alert("All fields are compulsary");    
+                gender.focus();    
+                return false;    
+            }    
+            return valid;
+        }
+
+        </script>
+
+    </head>
+    <body>
+        <h1 class="Heading" ><i>My first web page</i></h1>
+        <div class="red"></div>
+        <h3 class="subhead">What this is</h3>
+        <p>Welcome to <em>my first webpage,</em> I created this webpage without assistance of a webpage editor. Just my little text editor and a keen <b><I>UNDERSTANDING OF HTML.</I></b></p>
+        <h3 class="subhead">Why this is</h3>
+        <ul class="listed"><i>
+            <li>To learn HtML</li>
+            <li>List element
+                <ol>
+                    <li>Home</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                    <li>About</li>
+                </ol>
+            </li>
+            <li>Here I have created ordered and unordered list</li></i>
+        </ul>
+        <h3 class="subhead">ZeusLearning.com</h3>
+        <p class="link"><a href="https://www.zeuslearning.com" target="_blank">This link will open zeuslearning.com in a new tab</a></p>
+        <h3 class="subhead">On click of the following image navigate to Google.com</h3>
+        <a href="https://www.google.com/"><img class="google" src="google.png" alt="Google Logo" style="margin-left: 15px; width: 160px; height: 85px;">  </a>
+        <h4 class="random">Some random table</h4>
+        <table class="cell" border = "1" >
+            <tr>
+               <td>Row 1, cell 1</td>
+               <td>Row 1, cell 2</td>
+               <td>Row 1, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, cell 1</td>
+                <td>Row 2, cell 2</td>
+                <td>Row 2, cell 3</td>
+             </tr>
+            
+            <tr>
+               <td>Row 3, cell 1</td>
+               <td>Row 3, cell 2</td>
+               <td>Row 3, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 4, cell 1</td>
+                <td>Row 4, cell 2</td>
+                <td>Row 4, cell 3</td>
+             </tr>
+         </table>
+         <h4 class="random">Some random form</h4>
+         <form name="my_form" action="/cgi-bin/articles/development/javascript/form-validation-with-javascript/contact_simple.cgi" method="post" onsubmit="return validateForm();"> 
+            <p><I><b>NOTE:</b></I> It looks the part, but won't do a anything. </p>
+            <p>Name:</p>
+            <input type="text" name="yname" placeholder="Your name">
+            <p>Comments:</p>
+            <p>
+            <input type="text" name="comm" placeholder="Your comments" style="height: 180px; width: 180px; overflow: scroll;"></p>
+            <label for="gender" name="gender">Are you: </label>  
+            <p><input type="radio" id="gender" name="gender" value="male"/>Male  </p>
+            <p><input type="radio" id="gender" name="gender" value="female"/>Female </p>
+            <input type="submit" name="submit" value="Submit Query"> 
+        </form>  
+    </body>
+    </body>
+</html>

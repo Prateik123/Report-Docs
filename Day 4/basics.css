@@ -1,0 +1,27 @@
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+}
+
+html, body {
+    margin: 10px;
+}
+.header{
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom right,#2929a3, #5c00e6, #8000ff);
+}
+.content1, .content2, .content3 {
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom right,#5c00e6, #0040ff, #33ffff);	
+}
+.sidebar{
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom right, #65e8e8, #249595);
+}
+.footer{
+    border: 1px solid black;
+    background: #8000ff;
+}
