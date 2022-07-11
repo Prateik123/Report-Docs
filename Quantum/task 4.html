@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        My Quantum Login Page
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+        @font-face {
+            font-family: 'Quicksand';
+            src: url('C:\Users\user\Downloads\Quicksand-VariableFont_wght.ttf') format('ttf');
+        }
+        .wrapper{
+            top: 0px;
+            left: 0px;
+            width: 1024px;
+            height: 798px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #EEEEEE 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+        .header{
+            top: 0px;
+            left: 0px;
+            width: 1024px;
+            height: 47px;
+            /* UI Properties */
+            opacity: 1;
+            position: relative;
+            ;
+        }
+        .quantum{
+            position:absolute; 
+            top: 12px;
+            left: 29px;
+            width: 95px;
+            height: 18px;
+            /* UI Properties */
+            background:  0% 0% no-repeat padding-box;
+            color: #FFFFFF;
+            box-shadow: -2px 4px 4px #0000003D;
+            opacity: 1;
+        }
+        .logo{
+            top: 16px;
+            left: 29px;
+           
+           
+            background:  0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+        .blue_bar {
+            margin-top: 108px;
+            margin-left: 268px;
+            margin-bottom: 0;
+            width: 488px;
+            height: 4px;
+            background: #3AC7EC 0% 0% no-repeat padding-box;
+            border-radius: 2px 2px 0px 0px;
+            opacity: 1;
+        }
+        .login{
+            
+            margin-left: 268px;
+            width: 488px;
+            height: 550px;
+            margin-bottom: 86px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #FFFFFF;
+            opacity: 1;
+        }
+        .title {
+            display: flex;
+
+        }
+        .back {
+            margin-top: 22px;
+            margin-left: 32px;
+            width: 25px;
+            height: 26px;
+            /* UI Properties */
+            text-align: left;
+            font: normal normal normal 26px/28px Material-Design-Iconic-Font;
+            letter-spacing: 0.65px;
+            color: #1F7A54;
+            opacity: 1;
+        }
+        .cap{
+            margin-top: 20px;
+            margin-bottom: 34px;
+            margin-left: 70px;
+            width: 236px;
+            height: 30px;
+            font-weight: 600;
+            font-size: 23px;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            letter-spacing: 0px;
+            color: #222222;
+            opacity: 1;
+        }
+        .radio{
+            margin-left:32px;
+            display: flex;
+            margin-bottom: 23px;
+        }
+        .dis{
+            margin-left:8px;
+            margin-right: 32px;
+            font-size: 18px;
+            font-weight: 600;
+            height: 20px;
+            font-family: 'Quicksand', sans-serif;
+            color: #333333;
+            opacity: 1;
+        }
+        .state{
+            top: 237px;
+            margin-bottom: 5px;
+            margin-left: 32px;
+            width: 34px;
+            height: 15px;
+            font-size: 13px;
+            font-weight: 600;
+            /* UI Properties */
+            text-align: left;
+            font-family: 'Quicksand', sans-serif;
+            letter-spacing: 0px;
+            color: #666666;
+            opacity: 1;
+        }
+        .def{
+            display: flex;
+            margin-left: 32px;        
+            text-align: left;
+            font-family: 'Quicksand', sans-serif;
+            height: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            width: 68px;
+            letter-spacing: 0px;
+            color: #222222;
+            opacity: 1;
+            margin-bottom: 4px;
+            
+        }
+        .down1{
+            margin-left: 335px;    
+            margin-right: 32px;
+        }
+        .down2{
+               
+            margin-right: 25px;
+        }
+        .dist{
+            display: flex;
+            margin-left: 32px;
+            margin-bottom: 4px;
+            justify-content: space-between;
+            text-align: left;
+            font-family: 'Quicksand', sans-serif;
+            height: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0px;
+            color: #222222;
+            opacity: 1;
+        }
+        .user{
+            display: flex;
+            margin-top: 20px;
+            margin-left: 32px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #666666;
+            
+            letter-spacing: 0px;
+        }
+        .forg{
+            text-align: right;
+            margin-right: 32px;
+            margin-bottom: 13px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1F7A54;
+        }
+        .forg :hover {
+            border-bottom: #FFFFFF solid 3px;
+            transition: 0.3s ease;
+            font-weight: 700;
+            color: white;
+            columns:#FFFFFF ;
+        }
+        .eye{
+            margin-left: 320px;    
+            margin-right: 32px;
+        }
+        .eye :hover {
+            border-bottom: #FFFFFF solid 3px;
+            transition: 0.3s ease;
+            font-weight: 700;
+            color: white;
+            columns:#FFFFFF ;
+        }
+        .about {
+            display: flex;
+            margin-top: 32px;
+            justify-content: center;
+            font-weight: 600;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 15px;
+        }
+        
+        .about > a{
+            text-decoration: none;
+            font: normal normal medium 14px/18px Quicksand;
+            letter-spacing: 0px;
+            color: #1f7a54;
+            padding-left: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            opacity: 1;
+        }
+        .line{
+            margin-top: 2px;
+            margin-left: 32px;
+            width: 423px;
+            height: 1px;
+            margin-bottom: 36px;
+            background: #000000 0% 0% no-repeat padding-box;
+            opacity: 0.20;
+        }
+        .line1{
+            margin-top: 2px;
+            margin-left: 32px;
+            width: 423px;
+            height: 1px;
+            margin-bottom: 6px;
+            background: #000000 0% 0% no-repeat padding-box;
+            opacity: 0.20;
+        }
+        .check{
+            display: flex;
+            margin-top: 25px;
+            margin-bottom: 28px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0px;
+            color: #222222;
+            opacity: 1;
+        }
+        .key{
+            display: block;
+            margin-left: 136px;
+            top: 628px;
+            left: 404px;
+            width: 216px;
+            padding-top: 11px;
+            
+            height: 33px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            font-size: 15px;
+            letter-spacing: 0px;
+            color: #1F2834;
+            
+            /* UI Properties */
+            background: #3FD28B 0% 0% no-repeat padding-box;
+            
+            box-shadow: 0px 3px 5px #0000003D;
+            opacity: 1;
+        }
+        
+        .about{ 
+            padding-right: 8px;
+            border-right: 1px solid #0000001F;
+            opacity: 1;
+        }
+        .contact{
+            margin-left: 10px;
+        }
+        .footer{
+            display: flex;
+            top: 798px;
+            left: 0px;
+            width: 1024px;
+            height: 40px;
+            /* UI Properties */
+            background: #E0E1E1 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+        .f_logo{
+            display: flex;
+            margin-top: 8px;
+            margin-left: 259px;
+            width: 90px;
+            height: 24px;
+            border-right: 1px solid #0000001F;
+            opacity: 1;
+            padding-right: 16px;
+            
+            /* UI Properties */
+            opacity: 1;
+        }
+        .cr{
+            margin-top: 11px;
+            margin-left: 16px;
+            margin-right: 8px;
+            font-family:'Quicksand', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0px;
+            color: #616161;
+            opacity: 1;
+        }
+        .zeus{
+            margin-top: 11px;
+            margin-right: 11px;
+            font-family:'Quicksand', sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 0px;
+            color: #616161;
+            opacity: 1;
+        }
+        .right{
+            margin-top: 11px;
+            margin-right: 11px;
+            font-weight: 600;
+            font-family:'Quicksand', sans-serif;
+            font-size: 13px;
+            letter-spacing: 0px;
+            color: #616161;
+            opacity: 1;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="file:///C:/Users/user/Downloads/header%20pattern%20svg.svg" alt="header pattern" style="border-bottom: #3FD28B 2px solid">
+            <div class="quantum"><img class="logo" src="./images/quantum%20screen%20assets/icons/logo%20header.svg" alt="Logo"></div>
+        </div>
+        <div class="blue_bar"></div>
+        <div class="login">
+            <div class="title">
+                <img class="back" src="./images/quantum%20screen%20assets/icons/back.svg" alt="back">
+                <div class="cap">Log In with Quantum</div>
+
+            </div>
+            <div class="radio">
+                <img src="./images/quantum%20screen%20assets/icons/radio-button-on.svg" alt="radio on">
+                <div class="dis">District</div>
+                <img src="./images/quantum%20screen%20assets/icons/radio-button-off.svg" alt="radio off">
+                <div class="dis">Independent School</div>
+            </div>
+            <div class="state">State*</div>
+            <div class="def">Alabama<img class="down1" src="./images/quantum%20screen%20assets/icons/arrow-down.svg" alt="down arrow"></div>
+            
+            <div class="line"></div>
+            <div class="state">District*</div>
+            <div class="dist">Alabama School District<img class="down2" src="./images/quantum%20screen%20assets/icons/arrow-down.svg" alt="down arrow"></div>
+            <div class="line"></div>
+            <div class="user">Username/Email ID*</div>
+            <div class="line1"></div>
+            <div class="forg"><a class="forg-link" href="#">FORGOT USERNAME?</a></div>
+            <div class="user">Password*<img class="eye" src="./images/quantum%20screen%20assets/icons/preview.svg" alt="Preview"></div>
+            <div class="line1"></div>
+            <div class="forg"><a class="forg-link" href="#">FORGOT PASSWORD?</a></div>
+            <div class="check"><img src="./images/quantum%20screen%20assets/icons/checkbox-checked.svg" alt="checkbox" style="margin-right: 5px; margin-left: 32px;">Remember Me</div>
+            <div class="key">LOG IN</div>
+        
+            <div class="about">
+                <a href="#">About   |</a>
+                <a href="#"> Contact Us</a>
+            </div>
+        </div>
+        <div class="footer">
+            <img class="f_logo"src="./images/quantum%20screen%20assets/icons/logo%20footer.svg" alt="Quantum logo">
+            <div class="cr">Copyright © 2020-2021</div>
+            <div class="zeus">Zeus Systems Pvt. Ltd.</div>
+            <div class="right">All rights reserved.</div>
+        </div>
+
+    </div>
+</body>
+</html>

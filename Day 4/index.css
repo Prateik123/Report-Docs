@@ -1,9 +1,11 @@
 
             .container {
                 display: grid;
+                
                 grid-gap: 2px;
                 grid-template-columns: 150px 200px 200px;
-                grid-template-rows: 75px 150px 150px 75px;
+                grid-template-rows: 100px 200px 200px 100px;
+               
                 justify-content: center;
             }
 
@@ -17,6 +19,7 @@
                 grid-column: 1/2;
                 grid-row: 2/4;
             }
+            
 
             .content1 {
                 grid-column: 2/-1;
